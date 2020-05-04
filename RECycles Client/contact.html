@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+    <meta charset="UTF-8">
+    <title>RE:CYCLE - Contact</title>
+
+</head>
+<body>
+<header>
+    <a href="index.html">
+        <!--suppress CheckImageSize -->
+        <img src="Images/Logo.png" class="LogoImg" alt="logo.png" height="42" width="180">
+    </a>
+<br/>
+    <!--Alle script directory errors bliver fikset senere af Mig (Sebastian)-->
+    <script src="JavascriptFiles/Menu.js"></script>
+</header>
+
+        <h1> Contact us </h1>
+<form id="contactForm">
+        <h4> Name: </h4>
+        <input type="textCon" id="user_name2" placeholder="Type your name"/>
+        <br/>
+
+        <h4> How do you prefer to be contacted? </h4>
+        <p> By phone <input type="radio" name="radio" value="By phone"/>
+            By email <input type="radio" name="radio" value="By email"/> </p>
+
+        <h4> Phone Number: </h4>
+        <input id="phone_number" placeholder="Type your phone number" type="textCon" value=""/>
+
+        <h4>E-mail: </h4>
+        <input type="textCon" id="e_mail" value="" placeholder="Type your email">
+        <br/>
+
+        <h4> What is it regarding? </h4>
+        <!-- attribute errors skal undersøges-->
+        <textarea type="text" rows="6" cols="30" id="_comments" value="">
+     </textarea>
+        <br/>
+        <br/>
+
+        <button type="submit" class="buttonCont" id="contactButton" style="cursor: pointer;" > Submit </button>
+
+    </form>
+
+
+
+    <script src="JavascriptFiles/contact.js"> </script>
+</body>
+</html>

@@ -1,0 +1,362 @@
+/*General page-wide styling to the body of the site*/
+Body {
+    background-color: whitesmoke;
+}
+/*Setting fonts for the different text types on the website - making sure to have a uniform design throughout the page*/
+p {
+    font-style: normal;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100;
+}
+b {
+    font-style: normal;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+}
+/*Adding the logo*/
+.LogoImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center
+}
+/*Styling the menu*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #123C69;
+    font-family: Verdana, Perpetua, sans-serif;
+
+}
+li {
+    float: left;
+   
+}
+li a {
+    display: block;
+    color: white;
+    height: 24px;
+    text-align: center;
+    padding: 4px 16px;
+    text-decoration: none;
+
+}
+/*Styling for the specific links in the menu, including hover to change color,
+all based on the different ID's attached to the HTML code.*/
+#products {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+#products:hover {
+    background-color: #111;
+    height: 32px
+}
+#contact {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+#contact:hover {
+    background-color: #111;
+    height: 32px
+}
+#concept {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+#concept:hover {
+    background-color: #111;
+    height: 32px
+}
+#cart {
+float:right;
+}
+#cartlogo{
+    padding: 8px 24px 8px 16px;
+}
+#cart:hover {
+    background-color: #111;
+    height: 52px
+}
+#profile {
+    float:right;
+}
+#profileLogo {
+    padding: 8px;
+
+}
+#profile:hover {
+    background-color: #111;
+    height: 52px
+}
+/*styling for the article tags; mostly used in Concept and Contact*/
+Article {
+    padding-left: 40px;
+    Padding-right: 360px;
+    width: 920px;
+    float: left;
+}
+#ConceptImage {
+    padding-top: 40px;
+}
+/*Hero*/
+.banner {
+    background-color: gainsboro;
+    text-align: center;
+    padding: 1rem;
+    opacity: 0.8;
+    display: inline-list-item;
+    border-radius: 10%;
+
+
+}
+.hero {
+    min-height: calc(100vh - 40px);
+    background: url("./Images/dronning-louises-bro_cykler_martinheiberg.jpg") center/cover;
+    display:flex;
+    align-items: center;
+    justify-content: center;}
+.banner-btn {
+    font-size: 1rem;
+    background: white;
+    color: #111111;
+    cursor: pointer;
+    border: 1px solid;
+    }
+.banner-title {
+    color: black;
+    justify-content: center;
+}
+
+/*Styling of the mens, womens and childrens tags on the Products page*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+}
+h1.SubheaderProducts {
+    text-align: center;
+}
+.productsSub {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left:256px;
+    padding-right:256px;
+    flex-wrap: wrap;
+}
+.ProductCard img {
+    max-width:300px;
+    max-height:200px;
+}
+.ProductCard {
+    box-shadow: 0px 5px 6px 4px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    text-align: center;
+    font-family: arial;
+    margin-top: 12px;
+    margin-bottom: 72px;
+    margin-left:36px;
+    margin-right:36px;
+    flex-basis: 200%;
+}
+
+.ProductCard button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: orangered;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+.ProductCard button:hover {
+    opacity: 0.7;
+}
+
+#filter {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    text-align: center;
+}
+.price {
+    color: grey;
+    font-size: 28px;
+}
+
+/*Cart styles*/
+.Shopping-cart {
+    margin-left: 48px;
+    margin-right: 48px;
+}
+.CartProduct {
+    margin-left: 240px;
+    margin-right: 240px;
+    display: flex;
+    justify-content: space-between;
+}
+#removeItemFromCart {
+    height: 24px;
+}
+.info {
+    margin-left: 240px;
+    margin-right: 240px;
+    display: flex;
+    justify-content: space-between;
+}
+div.Shopping-cart p {
+}
+.CartHeader {
+    Text-align: center;
+}
+#removeItemFromCart {
+    margin-top: 14px;
+}
+
+.buttonLogOut {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #123C69;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 12px;
+    width: 125px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+.buttonLogIn {
+      display: inline-block;
+      border-radius: 4px;
+      background-color: #123C69;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 14px;
+      padding: 10px;
+      width: 100px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+  }
+
+.buttonCont {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #123C69;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.buttonSignUp {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #123C69;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+    width: 100px;
+    height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    position: absolute;
+    right: 941px;
+}
+
+input[type=textLogin] {
+    width: 21.7%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px #123C69;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 90%;
+}
+
+input[type=textCon] {
+    width: 21.7%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px #123C69;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 90%;
+}
+
+
+input[type='radio1'] {
+    height: 30px;
+    width: 30px;
+}
+
+textarea {
+    resize: none;
+    height: 100%;
+    width: 21.7%;
+}
+
+.h3Concept{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.conceptImg {
+    border-radius: 75%;
+}
+
+.h3Concept1 {
+    flex-basis: 100%;
+    padding: 15px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.ourConcept{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
